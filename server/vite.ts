@@ -37,7 +37,9 @@ export async function setupVite(app: Express, server: Server) {
     // Enable CORS for development
     cors: true,
     // Enable strict port checking
-    strictPort: true
+    strictPort: true,
+    // Allow all hosts to prevent blocking
+    allowedHosts: true as const
   };
 
   // Create Vite dev server
