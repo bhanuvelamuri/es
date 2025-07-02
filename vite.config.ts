@@ -41,7 +41,9 @@ export default defineConfig({
     // Enable strict port checking
     strictPort: true,
     // Allow all hosts (more permissive for development)
-    allowedHosts: true,
+    allowedHosts: [
+      'exciteservices.ca',
+      'www.exciteservices.ca',],
     // Configure HMR
     hmr: isDev ? {
       protocol: 'ws',
