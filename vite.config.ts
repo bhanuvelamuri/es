@@ -40,8 +40,8 @@ export default defineConfig({
     cors: true,
     // Enable strict port checking
     strictPort: true,
-    // Allow specific hosts
-    allowedHosts: ['exciteservices.ca', 'localhost', '127.0.0.1'],
+    // Allow all hosts (more permissive for development)
+    allowedHosts: true,
     // Configure HMR
     hmr: isDev ? {
       protocol: 'ws',
