@@ -30,6 +30,8 @@ export default defineConfig({
   // Base public path when served in development or production
   base: isDev ? '/' : '/',
   
+  plugins,
+  
   // Development server specific configuration
   server: {
     // Enable listening on all network interfaces
@@ -45,7 +47,6 @@ export default defineConfig({
       port: 24678
     } : undefined
   },
-    plugins,
   // Resolve configuration
   resolve: {
     alias: [
@@ -86,4 +87,4 @@ export default defineConfig({
     port: 3000,
     open: true
   }
-};
+});
